@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>Introducción a las Tecnologías de la Información</title>
+	<title>Registro de Empleados</title>
 
 	<!-- Global stylesheets -->
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
@@ -23,15 +23,10 @@
 	<!-- /core JS files -->
 
 	<!-- Theme JS files -->
-	<script src="global_assets/js/plugins/visualization/d3/d3.min.js"></script>
-	<script src="global_assets/js/plugins/visualization/d3/d3_tooltip.js"></script>
-	<script src="global_assets/js/plugins/forms/styling/switchery.min.js"></script>
-	<script src="global_assets/js/plugins/forms/selects/bootstrap_multiselect.js"></script>
-	<script src="global_assets/js/plugins/ui/moment/moment.min.js"></script>
-	<script src="global_assets/js/plugins/pickers/daterangepicker.js"></script>
+	<script src="global_assets/js/plugins/forms/styling/uniform.min.js"></script>
 
 	<script src="assets/js/app.js"></script>
-	<script src="global_assets/js/demo_pages/dashboard.js"></script>
+	<script src="global_assets/js/demo_pages/form_inputs.js"></script>
 	<!-- /theme JS files -->
 
 </head>
@@ -39,7 +34,7 @@
 <body>
 
 	<!-- Main navbar -->
-	<div class="navbar navbar-expand-md navbar-dark bg-brown-700">
+<div class="navbar navbar-expand-md navbar-dark bg-brown-700">
 		<div class="navbar-brand">
 			<a href="index.php" class="d-inline-block">
 				<img src="global_assets/images/logo_light.png" alt="">
@@ -58,7 +53,7 @@
 		<div class="collapse navbar-collapse" id="navbar-mobile">
 			<ul class="navbar-nav">
 				<li class="nav-item">
-					<a href="" class="navbar-nav-link sidebar-control sidebar-main-toggle d-none d-md-block">
+					<a href="#" class="navbar-nav-link sidebar-control sidebar-main-toggle d-none d-md-block">
 						<i class="icon-paragraph-justify3"></i>
 					</a>
 				</li>
@@ -142,16 +137,17 @@
 					<ul class="nav nav-sidebar" data-nav-type="accordion">
 
 						<!-- Main -->
-						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Principal</div> <i class="icon-menu" title="Main"></i></li>
+						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Inicio</div> <i class="icon-menu" title="Main"></i></li>
 						<li class="nav-item">
-							<a href="index.php" class="nav-link active">
+							<a href="index.php" class="nav-link">
 								<i class="icon-home4"></i>
 								<span>
-									Pagina Principal
+									Página Principal
+									<span class="d-block font-weight-normal opacity-50">Sin Novedades</span>
 								</span>
 							</a>
 						</li>
-						
+
 						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Empleados</div> <i class="icon-menu" title="Datos y Formularios"></i></li>
 						</li>
 						<li class="nav-item nav-item-submenu">
@@ -197,16 +193,16 @@
 						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Alumnos</div> <i class="icon-mi-domain" title="Extensions"></i></li>
 						</li>
 						<li class="nav-item nav-item-submenu">
-							<a href="#" class="nav-link"><i class="icon-map5"></i> <span>Alumnos</span></a>
+							<a href="#" class="nav-link"><i class="icon-pencil"></i> <span>Alumnos</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Alumnos">
-								<li class="nav-item"><a href="Listado_De_Alumnos.php" class="nav-link">Añadir Alumno</a></li>
-								<li class="nav-item"><a href="Añadir_Alumno.php" class="nav-link">Lista/Editar Alumno</a></li>
+								<li class="nav-item"><a href="Añadir_Alumno.php" class="nav-link">Añadir Alumno</a></li>
+								<li class="nav-item"><a href="Listado_De_Alumnos.php" class="nav-link">Lista/Editar Alumno</a></li>
 							</ul>
 						</li>
 						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Turorias</div> <i class="icon-mi-domain" title="Extensions"></i></li>
 						</li>
 						<li class="nav-item nav-item-submenu">
-							<a href="#" class="nav-link"><i class="icon-map5"></i> <span>Tutorias</span></a>
+							<a href="#" class="nav-link"><i class="icon-certificate"></i> <span>Tutorias</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Tutorias">
 								<li class="nav-item"><a href="Listado_De_Tutorias.php" class="nav-link">Lista de Tutorias</a></li>
 								<li class="nav-item"><a href="Añadir_Tutoria.php" class="nav-link">Añadir Tutorias</a></li>
@@ -229,16 +225,19 @@
 			<div class="page-header page-header-light">
 				<div class="page-header-content header-elements-md-inline">
 					<div class="page-title d-flex">
-						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Inicio</span> - Pagina Principal</h4>
+						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Empleados</span> - Registro de Empleados</h4>
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
 					</div>
+
+
 				</div>
 
 				<div class="breadcrumb-line breadcrumb-line-light header-elements-md-inline">
 					<div class="d-flex">
 						<div class="breadcrumb">
 							<a href="index.php" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Inicio</a>
-							<span class="breadcrumb-item active">Pagina Principal</span>
+							<a href="form_inputs.php" class="breadcrumb-item">Empleados</a>
+							<span class="breadcrumb-item active">Registro de Empleados</span>
 						</div>
 
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
@@ -258,222 +257,110 @@
 								</a>
 
 								<div class="dropdown-menu dropdown-menu-right">
-									<a href="#" class="dropdown-item"><i class="icon-user-lock"></i> Account security</a>
-									<a href="#" class="dropdown-item"><i class="icon-statistics"></i> Analytics</a>
-									<a href="#" class="dropdown-item"><i class="icon-accessibility"></i> Accessibility</a>
-									<div class="dropdown-divider"></div>
-									<a href="#" class="dropdown-item"><i class="icon-gear"></i> All settings</a>
+									<a href="#" class="dropdown-item"><i class="icon-user-lock"></i> Seguridad de la Cuenta</a>
+									<a href="#" class="dropdown-item"><i class="icon-statistics"></i> Analisis</a>
+									<a href="#" class="dropdown-item"><i class="icon-accessibility"></i> Accesibilidad</a>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<!-- content area -->
+			<!-- /page header -->
+
+
+			<!-- Content area -->
 			<div class="content">
 
-				<!-- Main charts -->
-				<div class="row">
-					<div class="col-xl-5">
-
-						<!-- Traffic sources -->
-						<div class="card">
-							<div class="card-header header-elements-inline">
-								<h6 class="card-title">Fuentes de Tráfico</h6>
-							</div>
-
-							<div class="card-body py-0">
-								<div class="row">
-									<div class="col-sm-4">
-										<div class="d-flex align-items-center justify-content-center mb-2">
-											<a href="#" class="btn bg-transparent border-teal text-teal rounded-round border-2 btn-icon mr-3">
-												<i class="icon-plus3"></i>
-											</a>
-											<div>
-												<div class="font-weight-semibold">Nuevas Visitas</div>
-												<span class="text-muted">2,349 aprox</span>
-											</div>
-										</div>
-										<div class="w-75 mx-auto mb-3" id="new-visitors"></div>
-									</div>
-
-									<div class="col-sm-4">
-										<div class="d-flex align-items-center justify-content-center mb-2">
-											<a href="#" class="btn bg-transparent border-warning-400 text-warning-400 rounded-round border-2 btn-icon mr-3">
-												<i class="icon-watch2"></i>
-											</a>
-											<div>
-												<div class="font-weight-semibold">Nuevas Sesiones</div>
-												<span class="text-muted">08:20 aprox</span>
-											</div>
-										</div>
-										<div class="w-75 mx-auto mb-3" id="new-sessions"></div>
-									</div>
-								</div>
-							</div>
-
-							<div class="chart position-relative" id="traffic-sources"></div>
-						</div>
-						<!-- /traffic sources -->
-					</div>
-				</div>
-					<div class="row">
-								<div class="card bg-pink-400">
-									<div class="card-body">
-										<div class="d-flex">
-											<h3 class="font-weight-semibold mb-0">49.4%</h3>
-					                	</div>
-					                	
-					                	<div>
-											Carga del Servidor
-											<div class="font-size-sm opacity-75">34.6% aprox</div>
-										</div>
-									</div>
-
-									<div id="server-load"></div>
-								</div>
-					<div class="col-sm-6 col-xl-3">
-						<div class="card card-body">
-							<div class="media">
-								<div class="media-body">
-									<h3 class="font-weight-semibold mb-0">54,390</h3>
-									<span class="text-uppercase font-size-sm text-muted">Comentarios Totales</span>
-								</div>
-
-								<div class="ml-3 align-self-center">
-									<i class="icon-bubbles4 icon-3x text-blue-400"></i>
-								</div>
-							</div>
-						</div>
-					</div>
-							<div class="card bg-indigo-400">
-								<div class="card-body">
-									<div class="d-flex">
-										<h3 class="font-weight-semibold mb-0">3,450</h3>
-										<span class="badge bg-teal-800 badge-pill align-self-center ml-auto">+53,6%</span>
-				                	</div>
-					                	
-				                	<div>
-										Miembros En línea
-										<div class="font-size-sm opacity-75">489 aprox</div>			
-									</div>
-								</div>
-								<div class="container-fluid">
-									<div id="members-online"></div>
-								</div>
-							</div>
-					<div class="col-sm-6 col-xl-3">
-						<div class="card card-body">
-							<div class="media">
-								<div class="media-body">
-									<h3 class="font-weight-semibold mb-0">35,000</h3>
-									<span class="text-uppercase font-size-sm text-muted">Solicitudes Enviadas</span>
-								</div>
-
-								<div class="ml-3 align-self-center">
-									<i class="icon-clipboard6 icon-3x text-blue-400"></i>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-						<div class="card">
-							<div class="card-header header-elements-inline">
-								<h6 class="card-title">Latest posts</h6>
-								<div class="header-elements">
-									<div class="list-icons">
-				                		<a class="list-icons-item" data-action="collapse"></a>
-				                		<a class="list-icons-item" data-action="reload"></a>
-				                		<a class="list-icons-item" data-action="remove"></a>
-				                	</div>
-			                	</div>
+				<!-- Form inputs -->
+				<div class="card bg-grey-300">
+					<div class="card-header header-elements-inline">
+						<h5 class="card-title">Registro de Empleados</h5>
+						<div class="header-elements">
+							<div class="list-icons">
+		                		<a class="list-icons-item" data-action="collapse"></a>
+		                		<a class="list-icons-item" data-action="reload"></a>
 		                	</div>
+	                	</div>
+					</div>
 
-							<div class="card-body pb-0">
-								<div class="row">
-									<div class="col-xl-6">
-										<div class="media flex-column flex-sm-row mt-0 mb-3">
-				        					<div class="mr-sm-3 mb-2 mb-sm-0">
-												<div class="card-img-actions">
-													<a href="#">
-														<img src="global_assets/images/placeholders/placeholder.jpg" class="img-fluid img-preview rounded" alt="">
-														<span class="card-img-actions-overlay card-img"><i class="icon-play3 icon-2x"></i></span>
-													</a>
-												</div>
-											</div>
+					<div class="card-body">
 
-				        					<div class="media-body">
-												<h6 class="media-title"><a href="#">Darle más diseño a la página</a></h6>
-					                    		<ul class="list-inline list-inline-dotted text-muted mb-2">
-					                    			<li class="list-inline-item"><i class="icon-book-play mr-2"></i> php</li>
-					                    		</ul>
-												Hacer que la página se vea mucho mejor
-											</div>
-										</div>
 
-										<div class="media flex-column flex-sm-row mt-0 mb-3">
-				        					<div class="mr-sm-3 mb-2 mb-sm-0">
-												<div class="card-img-actions">
-													<a href="#">
-														<img src="global_assets/images/placeholders/placeholder.jpg" class="img-fluid img-preview rounded" alt="">
-														<span class="card-img-actions-overlay card-img"><i class="icon-play3 icon-2x"></i></span>
-													</a>
-												</div>
-											</div>
+						<form action="#">
+							<fieldset class="mb-3">
+								<legend class="text-uppercase font-size-sm font-weight-bold">Registro</legend>
 
-				        					<div class="media-body">
-												<h6 class="media-title"><a href="#">Reparar los calendarios de Vacaciones</a></h6>
-					                    		<ul class="list-inline list-inline-dotted text-muted mb-2">
-					                    			<li class="list-inline-item"><i class="icon-book-play mr-2"></i> php</li>
-					                    		</ul>
-												Tema reparado
-											</div>
-										</div>
-									</div>
-
-									<div class="col-xl-6">
-										<div class="media flex-column flex-sm-row mt-0 mb-3">
-				        					<div class="mr-sm-3 mb-2 mb-sm-0">
-												<div class="card-img-actions">
-													<a href="#">
-														<img src="global_assets/images/placeholders/placeholder.jpg" class="img-fluid img-preview rounded" alt="">
-														<span class="card-img-actions-overlay card-img"><i class="icon-play3 icon-2x"></i></span>
-													</a>
-												</div>
-											</div>
-
-				        					<div class="media-body">
-												<h6 class="media-title"><a href="#">Generar 6 Widgets</a></h6>
-					                    		<ul class="list-inline list-inline-dotted text-muted mb-2">
-					                    			<li class="list-inline-item"><i class="icon-book-play mr-2"></i> Widgets</li>
-					                    		</ul>
-												Creo que este se verá bien
-											</div>
-										</div>
-
-										<div class="media flex-column flex-sm-row mt-0 mb-3">
-				        					<div class="mr-sm-3 mb-2 mb-sm-0">
-												<div class="card-img-actions">
-													<a href="#">
-														<img src="global_assets/images/placeholders/placeholder.jpg" class="img-fluid img-preview rounded" alt="">
-														<span class="card-img-actions-overlay card-img"><i class="icon-play3 icon-2x"></i></span>
-													</a>
-												</div>
-											</div>
-
-				        					<div class="media-body">
-												<h6 class="media-title"><a href="#">Publicar en php</a></h6>
-					                    		<ul class="list-inline list-inline-dotted text-muted mb-2">
-					                    			<li class="list-inline-item"><i class="icon-book-play mr-2"></i> Sección PHP</li>
-					                    		</ul>
-												Hay que subir esto a un servidor
-											</div>
-										</div>
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2 font-weight-bold">Nombre</label>
+									<div class="col-lg-10">
+										<input type="text" class="form-control border-orange border-2">
 									</div>
 								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2 font-weight-bold">Apellidos</label>
+									<div class="col-lg-10">
+										<input type="text" class="form-control border-orange border-2">
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2 font-weight-bold">Titulo</label>
+									<div class="col-lg-10">
+										<input type="text" class="form-control border-orange border-2">
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-md-2 font-weight-bold">Fecha de Nacimiento</label>
+									<div class="col-md-5">
+										<input class="form-control border-orange border-2" type="date">
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2 font-weight-bold">Correo Electronico</label>
+									<div class="col-lg-10">
+										<input type="text" class="form-control border-orange border-2">
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2 font-weight-bold">País</label>
+									<div class="col-lg-10">
+										<input type="text" class="form-control border-orange border-2">
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2 font-weight-bold">Ciudad</label>
+									<div class="col-lg-10">
+										<input type="text" class="form-control border-orange border-2">
+									</div>
+								</div>
+
+		                        <div class="form-group row">
+		                        	<label class="col-form-label col-lg-2 font-weight-bold">Estado</label>
+		                        	<div class="col-lg-10">
+			                            <select class="form-control border-orange border-2">
+			                                <option value="opt1"><span class="badge badge-success">Activo(a)</span></option>
+			                                <option value="opt2"><span class="badge badge-secondary">Inactivo(a)</span></option>
+			                                <option value="opt3"><span class="badge badge-danger">Suspendido(a)</span></option>
+			                            </select>
+		                            </div>
+		                        </div>
+
+								
+							<div class="text-right">
+								<button type="submit" class="btn btn-primary">Registrar <i class="icon-paperplane ml-2"></i></button>
 							</div>
-						</div>
-				<!-- /main charts -->
+						</form>
+					</div>
+				</div>
+				<!-- /form inputs -->
+
+			</div>
 			<!-- /content area -->
 
 
@@ -492,7 +379,7 @@
 					</span>
 
 					<ul class="navbar-nav ml-lg-auto">
-						<li class="nav-item"><a href="https://kopyov.ticksy.com/" class="navbar-nav-link" target="_blank"><i class="icon-lifebuoy mr-2"></i> Ayuda</a></li>
+						<li class="nav-item"><a href="https://kopyov.ticksy.com/" class="navbar-nav-link" target="_blank"><i class="icon-lifebuoy mr-2"></i> Suporte</a></li>
 						<li class="nav-item"><a href="http://demo.interface.club/limitless/docs/" class="navbar-nav-link" target="_blank"><i class="icon-file-text2 mr-2"></i> Documentos</a></li>
 					</ul>
 				</div>

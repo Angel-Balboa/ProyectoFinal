@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>Registro de Empleados</title>
+	<title>Introducción a las Tecnologías de la Información</title>
 
 	<!-- Global stylesheets -->
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
@@ -147,7 +147,6 @@
 								</span>
 							</a>
 						</li>
-
 						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Empleados</div> <i class="icon-menu" title="Datos y Formularios"></i></li>
 						</li>
 						<li class="nav-item nav-item-submenu">
@@ -193,16 +192,16 @@
 						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Alumnos</div> <i class="icon-mi-domain" title="Extensions"></i></li>
 						</li>
 						<li class="nav-item nav-item-submenu">
-							<a href="#" class="nav-link"><i class="icon-map5"></i> <span>Alumnos</span></a>
+							<a href="#" class="nav-link"><i class="icon-pencil"></i> <span>Alumnos</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Alumnos">
-								<li class="nav-item"><a href="Listado_De_Alumnos.php" class="nav-link">Añadir Alumno</a></li>
-								<li class="nav-item"><a href="Añadir_Alumno.php" class="nav-link">Lista/Editar Alumno</a></li>
+								<li class="nav-item"><a href="Añadir_Alumno.php" class="nav-link">Añadir Alumno</a></li>
+								<li class="nav-item"><a href="Listado_De_Alumnos.php" class="nav-link">Lista/Editar Alumno</a></li>
 							</ul>
 						</li>
 						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Turorias</div> <i class="icon-mi-domain" title="Extensions"></i></li>
 						</li>
 						<li class="nav-item nav-item-submenu">
-							<a href="#" class="nav-link"><i class="icon-map5"></i> <span>Tutorias</span></a>
+							<a href="#" class="nav-link"><i class="icon-certificate"></i> <span>Tutorias</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Tutorias">
 								<li class="nav-item"><a href="Listado_De_Tutorias.php" class="nav-link">Lista de Tutorias</a></li>
 								<li class="nav-item"><a href="Añadir_Tutoria.php" class="nav-link">Añadir Tutorias</a></li>
@@ -225,7 +224,7 @@
 			<div class="page-header page-header-light">
 				<div class="page-header-content header-elements-md-inline">
 					<div class="page-title d-flex">
-						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Empleados</span> - Registro de Empleados</h4>
+						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Alumnos</span> - Añadir Alumnos</h4>
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
 					</div>
 
@@ -236,8 +235,8 @@
 					<div class="d-flex">
 						<div class="breadcrumb">
 							<a href="index.php" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Inicio</a>
-							<a href="form_inputs.php" class="breadcrumb-item">Empleados</a>
-							<span class="breadcrumb-item active">Registro de Empleados</span>
+							<a href="AgregarDep.php" class="breadcrumb-item">Alumnos</a>
+							<span class="breadcrumb-item active">Añadir Alumnos</span>
 						</div>
 
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
@@ -275,7 +274,7 @@
 				<!-- Form inputs -->
 				<div class="card bg-grey-300">
 					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Registro de Empleados</h5>
+						<h5 class="card-title">Añadir Alumnos</h5>
 						<div class="header-elements">
 							<div class="list-icons">
 		                		<a class="list-icons-item" data-action="collapse"></a>
@@ -289,71 +288,39 @@
 
 						<form action="#">
 							<fieldset class="mb-3">
-								<legend class="text-uppercase font-size-sm font-weight-bold">Registro</legend>
+								<legend class="text-uppercase font-size-sm font-weight-bold">Agreagar</legend>
+
+								<div class="form-group row">
+									<label class="col-form-label col-lg-2 font-weight-bold">Matricula</label>
+									<div class="col-lg-10">
+										<input type="text" class="form-control border-indigo border-2" maxlength="7" placeholder="Matricula del Alumno">
+									</div>
+								</div>
 
 								<div class="form-group row">
 									<label class="col-form-label col-lg-2 font-weight-bold">Nombre</label>
 									<div class="col-lg-10">
-										<input type="text" class="form-control border-orange border-2">
+										<input type="text" class="form-control border-indigo border-2" placeholder="Nombre del Alumno">
 									</div>
 								</div>
 
 								<div class="form-group row">
-									<label class="col-form-label col-lg-2 font-weight-bold">Apellidos</label>
+									<label class="col-form-label col-lg-2 font-weight-bold">Carrera</label>
 									<div class="col-lg-10">
-										<input type="text" class="form-control border-orange border-2">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2 font-weight-bold">Titulo</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control border-orange border-2">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-md-2 font-weight-bold">Fecha de Nacimiento</label>
-									<div class="col-md-5">
-										<input class="form-control border-orange border-2" type="date">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2 font-weight-bold">Correo Electronico</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control border-orange border-2">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2 font-weight-bold">País</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control border-orange border-2">
-									</div>
-								</div>
-
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2 font-weight-bold">Ciudad</label>
-									<div class="col-lg-10">
-										<input type="text" class="form-control border-orange border-2">
-									</div>
-								</div>
-
-		                        <div class="form-group row">
-		                        	<label class="col-form-label col-lg-2 font-weight-bold">Estado</label>
 		                        	<div class="col-lg-10">
-			                            <select class="form-control border-orange border-2">
-			                                <option value="opt1"><span class="badge badge-success">Activo(a)</span></option>
-			                                <option value="opt2"><span class="badge badge-secondary">Inactivo(a)</span></option>
-			                                <option value="opt3"><span class="badge badge-danger">Suspendido(a)</span></option>
+			                            <select class="form-control border-indigo border-2">
+											<option value="opt2"><span>INGENIERIA EN TECNOLOGIAS DE LA INFORMACIÓN</span></option>
+			                                <option value="opt1"><span>INGENIERIA DE SISTEMAS AUTOMOTRICES</span></option>
+			                                <option value="opt2"><span>INGENIERIA MECATRONICA</span></option>
+			                                <option value="opt2"><span>PYMES</span></option>
+			                                <option value="opt2"><span>INGENIERIA EN TECNOLOGIAS DE MANUFACTURA</span></option>
 			                            </select>
 		                            </div>
-		                        </div>
-
+									</div>
+								</div>
 								
 							<div class="text-right">
-								<button type="submit" class="btn btn-primary">Registrar <i class="icon-paperplane ml-2"></i></button>
+								<button class="btn bg-violet" data-toggle="modal" data-target="#Envio_modal">Registrar Alumno</button>
 							</div>
 						</form>
 					</div>
@@ -362,6 +329,28 @@
 
 			</div>
 			<!-- /content area -->
+
+
+			<!--Modal de Envio-->
+				<div id="Envio_modal" class="modal fade" tabindex="-1">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header bg-violet">
+								<h5 class="modal-title">Alumno Registrado</h5>
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
+
+							<div class="modal-body">
+								<h5>El alumno se ha registrado correctamente</h5>
+							</div>
+
+							<div class="modal-footer">
+								<button type="button" class="btn bg-brown" data-dismiss="modal">Aceptar</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			<!--Fin del Modal-->	
 
 
 			<!-- Footer -->

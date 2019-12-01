@@ -147,6 +147,7 @@
 								</span>
 							</a>
 						</li>
+						<li class="nav-item nav-item-submenu">
 						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Empleados</div> <i class="icon-menu" title="Datos y Formularios"></i></li>
 						</li>
 						<li class="nav-item nav-item-submenu">
@@ -192,22 +193,22 @@
 						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Alumnos</div> <i class="icon-mi-domain" title="Extensions"></i></li>
 						</li>
 						<li class="nav-item nav-item-submenu">
-							<a href="#" class="nav-link"><i class="icon-map5"></i> <span>Alumnos</span></a>
+							<a href="#" class="nav-link"><i class="icon-pencil"></i> <span>Alumnos</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Alumnos">
-								<li class="nav-item"><a href="Listado_De_Alumnos.php" class="nav-link">Añadir Alumno</a></li>
-								<li class="nav-item"><a href="Añadir_Alumno.php" class="nav-link">Lista/Editar Alumno</a></li>
+								<li class="nav-item"><a href="Añadir_Alumno.php" class="nav-link">Añadir Alumno</a></li>
+								<li class="nav-item"><a href="Listado_De_Alumnos.php" class="nav-link">Lista/Editar Alumno</a></li>
 							</ul>
 						</li>
 						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Turorias</div> <i class="icon-mi-domain" title="Extensions"></i></li>
 						</li>
 						<li class="nav-item nav-item-submenu">
-							<a href="#" class="nav-link"><i class="icon-map5"></i> <span>Tutorias</span></a>
+							<a href="#" class="nav-link"><i class="icon-certificate"></i> <span>Tutorias</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Tutorias">
 								<li class="nav-item"><a href="Listado_De_Tutorias.php" class="nav-link">Lista de Tutorias</a></li>
 								<li class="nav-item"><a href="Añadir_Tutoria.php" class="nav-link">Añadir Tutorias</a></li>
 							</ul>
 						</li>
-				</div>
+					</div>
 				<!-- /main navigation -->
 
 			</div>

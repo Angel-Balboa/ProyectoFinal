@@ -23,11 +23,19 @@
 	<!-- /core JS files -->
 
 	<!-- Theme JS files -->
-	<script src="global_assets/js/plugins/tables/datatables/datatables.min.js"></script>
-	<script src="global_assets/js/plugins/forms/selects/select2.min.js"></script>
+	<script src="global_assets/js/plugins/forms/styling/uniform.min.js"></script>
+	<script src="global_assets/js/plugins/ui/moment/moment.min.js"></script>
+	<script src="global_assets/js/plugins/pickers/daterangepicker.js"></script>
+	<script src="global_assets/js/plugins/pickers/anytime.min.js"></script>
+	<script src="global_assets/js/plugins/pickers/pickadate/picker.js"></script>
+	<script src="global_assets/js/plugins/pickers/pickadate/picker.date.js"></script>
+	<script src="global_assets/js/plugins/pickers/pickadate/picker.time.js"></script>
+	<script src="global_assets/js/plugins/pickers/pickadate/legacy.js"></script>
+	<script src="global_assets/js/plugins/notifications/jgrowl.min.js"></script>
 
 	<script src="assets/js/app.js"></script>
-	<script src="global_assets/js/demo_pages/datatables_basic.js"></script>
+	<script src="global_assets/js/demo_pages/form_inputs.js"></script>
+	<script src="global_assets/js/demo_pages/picker_date.js"></script>
 	<!-- /theme JS files -->
 
 </head>
@@ -35,31 +43,13 @@
 <body>
 
 	<!-- Main navbar -->
-	<div class="navbar navbar-expand-md navbar-dark bg-brown-700">
+<div class="navbar navbar-expand-md navbar-dark bg-brown-700">
 		<div class="navbar-brand">
 			<a href="index.php" class="d-inline-block">
 				<img src="global_assets/images/logo_light.png" alt="">
 			</a>
 		</div>
-
-		<div class="d-md-none">
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-mobile">
-				<i class="icon-tree5"></i>
-			</button>
-			<button class="navbar-toggler sidebar-mobile-main-toggle" type="button">
-				<i class="icon-paragraph-justify3"></i>
-			</button>
-		</div>
-
 		<div class="collapse navbar-collapse" id="navbar-mobile">
-			<ul class="navbar-nav">
-				<li class="nav-item">
-					<a href="#" class="navbar-nav-link sidebar-control sidebar-main-toggle d-none d-md-block">
-						<i class="icon-paragraph-justify3"></i>
-					</a>
-				</li>
-
-			</ul>
 
 			<span class="badge bg-success ml-md-3 mr-md-auto">Online</span>
 
@@ -91,7 +81,6 @@
 
 		<!-- Main sidebar -->
 		<div class="sidebar sidebar-dark sidebar-main sidebar-expand-md bg-brown">
-
 			<!-- Sidebar mobile toggler -->
 			<div class="sidebar-mobile-toggler text-center">
 				<a href="#" class="sidebar-mobile-main-toggle">
@@ -107,7 +96,7 @@
 
 
 			<!-- Sidebar content -->
-			<div class="sidebar-content">
+			<div class="sidebar-content ">
 
 				<!-- User menu -->
 				<div class="sidebar-user">
@@ -120,7 +109,7 @@
 							<div class="media-body">
 								<div class="media-title font-weight-semibold">Angel Balboa</div>
 								<div class="font-size-xs opacity-50">
-									<i class="icon-pin font-size-sm"></i> &nbsp;Cd. Victoria
+									<i class="icon-pin font-size-sm"></i> &nbsp;Cd.Victoria
 								</div>
 							</div>
 
@@ -134,11 +123,11 @@
 
 
 				<!-- Main navigation -->
-								<div class="card card-sidebar-mobile">
+				<div class="card card-sidebar-mobile">
 					<ul class="nav nav-sidebar" data-nav-type="accordion">
 
 						<!-- Main -->
-						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Principal</div> <i class="icon-menu" title="Main"></i></li>
+						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Principal</div> <i class="icon-menu" title="Inicio"></i></li>
 						<li class="nav-item">
 							<a href="index.php" class="nav-link active">
 								<i class="icon-home4"></i>
@@ -192,16 +181,16 @@
 						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Alumnos</div> <i class="icon-mi-domain" title="Extensions"></i></li>
 						</li>
 						<li class="nav-item nav-item-submenu">
-							<a href="#" class="nav-link"><i class="icon-map5"></i> <span>Alumnos</span></a>
+							<a href="#" class="nav-link"><i class="icon-pencil"></i> <span>Alumnos</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Alumnos">
-								<li class="nav-item"><a href="Listado_De_Alumnos.php" class="nav-link">Añadir Alumno</a></li>
-								<li class="nav-item"><a href="Añadir_Alumno.php" class="nav-link">Lista/Editar Alumno</a></li>
+								<li class="nav-item"><a href="Añadir_Alumno.php" class="nav-link">Añadir Alumno</a></li>
+								<li class="nav-item"><a href="Listado_De_Alumnos.php" class="nav-link">Lista/Editar Alumno</a></li>
 							</ul>
 						</li>
 						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Turorias</div> <i class="icon-mi-domain" title="Extensions"></i></li>
 						</li>
 						<li class="nav-item nav-item-submenu">
-							<a href="#" class="nav-link"><i class="icon-map5"></i> <span>Tutorias</span></a>
+							<a href="#" class="nav-link"><i class="icon-certificate"></i> <span>Tutorias</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Tutorias">
 								<li class="nav-item"><a href="Listado_De_Tutorias.php" class="nav-link">Lista de Tutorias</a></li>
 								<li class="nav-item"><a href="Añadir_Tutoria.php" class="nav-link">Añadir Tutorias</a></li>
@@ -224,7 +213,7 @@
 			<div class="page-header page-header-light">
 				<div class="page-header-content header-elements-md-inline">
 					<div class="page-title d-flex">
-						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Alumnos</span> - Listado de Alumnos</h4>
+						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Vacaciones</span> - Listado de Vacaciones</h4>
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
 					</div>
 				</div>
@@ -233,8 +222,8 @@
 					<div class="d-flex">
 						<div class="breadcrumb">
 							<a href="index.php" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Inicio</a>
-							<a href="Listado_De_Alumnos.php" class="breadcrumb-item">Alumnos</a>
-							<span class="breadcrumb-item active">Listado de Alumnos</span>
+							<a href="Lista_De_Vacaciones.php" class="breadcrumb-item">Vacaciones</a>
+							<span class="breadcrumb-item active">Lista de Vacaciones</span>
 						</div>
 
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
@@ -242,13 +231,10 @@
 
 					<div class="header-elements d-none">
 						<div class="breadcrumb justify-content-center">
-							<a href="#" class="breadcrumb-elements-item dropdown-toggle" data-toggle="dropdown">
+							<a href="#" class="breadcrumb-elements-item">
 								<i class="icon-comment-discussion mr-2"></i>
 								Soporte
 							</a>
-							<div class="dropdown-menu dropdown-menu-right">
-								<a href="#" class="dropdown-item"><i class="icon-user-lock"></i> Ayuda no disponible por el momento</a>
-							</div>
 
 							<div class="breadcrumb-elements-item dropdown p-0">
 								<a href="#" class="breadcrumb-elements-item dropdown-toggle" data-toggle="dropdown">
@@ -257,9 +243,11 @@
 								</a>
 
 								<div class="dropdown-menu dropdown-menu-right">
-									<a href="#" class="dropdown-item"><i class="icon-user-lock"></i> Seguridad de la Cuenta</a>
-									<a href="#" class="dropdown-item"><i class="icon-statistics"></i> Analisis</a>
-									<a href="#" class="dropdown-item"><i class="icon-accessibility"></i> Accesibilidad</a>
+									<a href="#" class="dropdown-item"><i class="icon-user-lock"></i> Account security</a>
+									<a href="#" class="dropdown-item"><i class="icon-statistics"></i> Analytics</a>
+									<a href="#" class="dropdown-item"><i class="icon-accessibility"></i> Accessibility</a>
+									<div class="dropdown-divider"></div>
+									<a href="#" class="dropdown-item"><i class="icon-gear"></i> All settings</a>
 								</div>
 							</div>
 						</div>
@@ -272,10 +260,9 @@
 			<!-- Content area -->
 			<div class="content">
 
-				<!-- Basic datatable -->
 				<div class="card bg-grey-300">
 					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Lista de Alumnos</h5>
+						<h5 class="card-title font-weight-bold">Lista de Vacaciones</h5>
 						<div class="header-elements">
 							<div class="list-icons">
 		                		<a class="list-icons-item" data-action="collapse"></a>
@@ -285,59 +272,72 @@
 					</div>
 					<table class="table table-bordered">
 						<thead>
-							<tr class="bg-green-400">
+							<tr class="bg-slate">
 								<th>   </th>
-								<th>Matricula</th>
-								<th>Nombre</th>
-								<th>Carrera</th>
+								<th>Nombre del Empleado</th>
+								<th>Empresa en que Trabaja</th>
+								<th>Años Trabajando</th>
+								<th>Periodo Vacacional</th>
+								<th>Motivo</th>
 						</thead>
 						<tbody>
-							<tr class="bg-slate-300">
-							<td><a href="#" class="list-icons-item" data-toggle="modal" data-target="#EditarA1_modal"><i class="icon-pencil7"></i></a>
+							<tr class="bg-green-300">
+							<td><a href="#" class="list-icons-item" data-toggle="modal" data-target="#Vac1_modal"><i class="icon-pencil7"></i></a>
 					    	<a href="#" class="list-icons-item" data-popup="tooltip" title="Borrar" data-toggle="modal" data-target="#Borrar_modal"><i class="icon-trash"></i></a></td>
-								<td>1930167</td>
-								<td>Ángel Martin Reyes Balboa</td>
-								<td>INGENIERIA EN TECNOLOGIAS DE LA INFORMACIÓN</td>
-							</tr>						
-							<tr class="table-danger">
-							<td><a href="#" class="list-icons-item" data-toggle="modal" data-target="#EditarA2_modal"><i class="icon-pencil7"></i></a>
-					    	<a href="#" class="list-icons-item" data-popup="tooltip" title="Borrar" data-toggle="modal" data-target="#Borrar_modal"><i class="icon-trash"></i></a></td>
-								<td>1780273</td>
-								<td>Victoria Bernardo Bouza</td>
-								<td>INGENIERIA MECATRONICA</td>
+								<td>Marth Reyes Balboa</td>
+								<td>Ventas Galaxia</td>
+								<td>2 años</td>
+								<td>19/Oct/2019 - 30/Oct/2019</td>
+								<td>Problemas Familiares</td>
 							</tr>
-							<tr>
-							<td><a href="#" class="list-icons-item" data-toggle="modal" data-target="#EditarA3_modal"><i class="icon-pencil7"></i></a>
-					    	<a href="#" class="list-icons-item" data-popup="tooltip" title="Borrar" data-toggle="modal" data-target="#Borrar_modal"><i class="icon-trash"></i></a></td>
-								<td>1890239</td>
-								<td>Juan Antonio Ivanov Perona</td>
-								<td>INGENIERIA DE SISTEMAS AUTOMOTRICES</td>
+							<tr class="bg-green-300">
+								<td><a href="#Vac2_modal" class="list-icons-item" data-toggle="modal" data-target="#Vac2_modal"><i class="icon-pencil7"></i></a>
+								<a href="#" class="list-icons-item" data-toggle="modal" data-target="#remove_modal"><i class="icon-trash"></i></a></td>
+								<td>Jackelyn Martinez Aguilar</td>
+								<td>Geek Celulares</td>
+								<td>1 año</td>
+								<td>20/Nov/2019 - 25/Nov/2019</td>
+								<td>Muchos días de vacaciones acumulados</td>	
 							</tr>
-							<tr class="table-danger">
-							<td><a href="#" class="list-icons-item" data-toggle="modal" data-target="#EditarA4_modal"><i class="icon-pencil7"></i></a>
-					    	<a href="#" class="list-icons-item" data-popup="tooltip" title="Borrar" data-toggle="modal" data-target="#Borrar_modal"><i class="icon-trash"></i></a></td>
-								<td>1940392</td>
-								<td>Victor Pages Blanco</td>
-								<td>INGENIERIA MECATRONICA</td>
+							<tr class="bg-green-300">
+							<td><a href="#" class="list-icons-item" data-toggle="modal" data-target="#Vac3_modal"><i class="icon-pencil7"></i></a>
+					    	<a href="#" class="list-icons-item" data-toggle="modal" data-target="#remove_modal"><i class="icon-trash"></i></a></td>
+								<td>Aura Zafiro</td>
+								<td>Ciberseguridad Tech</td>
+								<td>4 años o más</td>
+								<td>1/Nov/2019 - 8/Nov/2019 </td>
+								<td>Cumpleaños de un familiar</td>
+							<tr class="bg-green-300">
+							<td><a href="#" class="list-icons-item" data-toggle="modal" data-target="#Vac4_modal"><i class="icon-pencil7"></i></a>
+					    	<a href="#" class="list-icons-item" data-toggle="modal" data-target="#remove_modal"><i class="icon-trash"></i></a>
+					    	</td>
+								<td>DIO	Brando</td>
+								<td>Ventas Galaxia</td>
+								<td>1 año</td>
+								<td>15/Oct/2019 - 25/Oct/2019</td>
+								<td>Familiar enfermo en Egipto</td>
 							</tr>
-							<tr>
-							<td><a href="#" class="list-icons-item" data-toggle="modal" data-target="#EditarA5_modal"><i class="icon-pencil7"></i></a>
-					    	<a href="#" class="list-icons-item" data-popup="tooltip" title="Borrar" data-toggle="modal" data-target="#Borrar_modal"><i class="icon-trash"></i></a></td>
-								<td>1849182</td>
-								<td>Carla Adrian Acuña</td>
-								<td>PYMES</td>
+							<tr class="bg-green-300">
+							<td><a href="#" class="list-icons-item" data-toggle="modal" data-target="#Vac5_modal"><i class="icon-pencil7"></i></a>
+					    	<a href="#" class="list-icons-item" data-toggle="modal" data-target="#remove_modal"><i class="icon-trash"></i></a>
+					    	</td>
+								<td>Chrome Emblem</td>
+								<td>Auto GreenStar</td>
+								<td>3 años</td>
+								<td>20/Dic/2019 - 2/Ene/2019</td>
+								<td>Pasar la navidad con mi familia</td>
 							</tr>
 						</tbody>
 					</table>
+				</div>
 			</div>
 			<!-- /content area -->
-
-				<!--Modal Editar-->
-				<div id="EditarA1_modal" class="modal fade" tabindex="-1">
+			<!--Modal de Editar-->
+				<div id="Vac1_modal" class="modal fade" tabindex="-1">
 					<div class="modal-dialog modal-dialog-scrollable">
 						<div class="modal-content">
-							<div class="modal-header pb-3 bg-brown-700">
-								<h5 class="modal-title font-weight-bold">Editar Alumno</h5>
+							<div class="modal-header pb-3 bg-blue">
+								<h5 class="modal-title font-weight-bold">Editar Vacaciones</h5>
 								<button type="button" class="close" data-dismiss="modal">&times;</button>
 							</div>
 
@@ -345,50 +345,64 @@
 								<div class="form-group">
 										<div class="row">
 											<div class="col-lg-5">
-												<label>Matricula</label>
-												<input type="text" value="1930167" class="form-control">
-											</div>
-										</div>
-								</div>
-									<div class="form-group">
-										<div class="row">
-											<div class="col-lg-5">
-												<label>Nombre</label>
-												<input type="text" value="Angel Martin Reyes Balboa" class="form-control">
+												<label>Empleado</label>
+												<input type="text" value="Marth Reyes Balboa" class="form-control">
 											</div>
 										</div>
 									</div>
 									<div class="form-group">
 										<div class="row">
-											<div class="col-lg-5">
-												<label>Carrera</label>
-													<select class="form-control col-lg-10 border-indigo border-2">
-														<option value="opt2"><span>INGENIERIA EN TECNOLOGIAS DE LA INFORMACIÓN</span></option>
-			                                			<option value="opt1"><span>INGENIERIA DE SISTEMAS AUTOMOTRICES</span></option>
-			                                			<option value="opt2"><span>INGENIERIA MECATRONICA</span></option>
-			                                			<option value="opt2"><span>PYMES</span></option>
-			                                			<option value="opt2"><span>INGENIERIA EN TECNOLOGIAS DE MANUFACTURA</span></option>
+											<div class="col-lg-10">
+												<label>Empresa</label>
+												<input type="text" value="Ventas Galaxia" class="form-control">
+											</div>
+										</div>
+									</div>
+									<div class="form-group">
+										<div class="row">
+											<div class="col-lg-10">
+												<label>Años trabajando</label>
+			                            			<select class="form-control">
+			                                			<option value="opt1"><span>Menos de 1 año</span></option>
+			                                			<option value="opt2"><span>1 año</span></option>
+			                                			<option value="opt3"><span>2 años</span></option>
+			                                			<option value="opt3"><span>3 años</span></option>
+			                                			<option value="opt3"><span>4 o más años</span></option>
 			                            			</select>
 											</div>
 										</div>
 									</div>
-							</div>
-
+									<div class="form-group">
+										<div class="row">
+											<div class="col-lg-10">
+												<label>Periodo Vacacional</label>
+												<input class="form-control col-lg-10 daterange-basic" type="text" value="19/10/2019-30/10/2019">
+											</div>
+										</div>
+									</div>
+									<div class="form-group">
+										<div class="row">
+											<div class="col-lg-10">
+												<label>Motivo</label>
+												<input type="text" value="Problemas Familiares" class="form-control">
+											</div>
+										</div>
+									</div>
 							<div class="modal-footer pt-3">
 								<button type="button" class="btn btn-link" data-dismiss="modal">Cerrar</button>
-								<button type="button" class="btn bg-violet" data-dismiss="modal">Guardar Cambios</button>
+								<button type="button" class="btn bg-primary">Guardar Cambios</button>
 							</div>
 						</div>
 					</div>
 				</div>
-				<!-- Fin Modal de Editar-->
-
-				<!--Modal Editar-->
-				<div id="EditarA2_modal" class="modal fade" tabindex="-1">
+				</div>
+				<!--Fin del Modal Editar-->
+				<!--Modal de Editar-->
+				<div id="Vac2_modal" class="modal fade" tabindex="-1">
 					<div class="modal-dialog modal-dialog-scrollable">
 						<div class="modal-content">
-							<div class="modal-header pb-3 bg-brown-700">
-								<h5 class="modal-title font-weight-bold">Editar Alumno</h5>
+							<div class="modal-header pb-3 bg-blue">
+								<h5 class="modal-title font-weight-bold">Editar Vacaciones</h5>
 								<button type="button" class="close" data-dismiss="modal">&times;</button>
 							</div>
 
@@ -396,50 +410,64 @@
 								<div class="form-group">
 										<div class="row">
 											<div class="col-lg-5">
-												<label>Matricula</label>
-												<input type="text" value="1780273" class="form-control">
-											</div>
-										</div>
-								</div>
-									<div class="form-group">
-										<div class="row">
-											<div class="col-lg-5">
-												<label>Nombre</label>
-												<input type="text" value="Victoria Bernardo Bouza" class="form-control">
+												<label>Empleado</label>
+												<input type="text" value="Jackelyn Martinez Aguilar" class="form-control">
 											</div>
 										</div>
 									</div>
 									<div class="form-group">
 										<div class="row">
-											<div class="col-lg-5">
-												<label>Carrera</label>
-													<select class="form-control col-lg-10 border-indigo border-2">
-														<option value="opt2"><span>INGENIERIA MECATRONICA</span></option>
-			                                			<option value="opt1"><span>INGENIERIA DE SISTEMAS AUTOMOTRICES</span></option>
-			                                			<option value="opt2"><span>PYMES</span></option>
-			                                			<option value="opt2"><span>INGENIERIA EN TECNOLOGIAS DE LA INFORMACIÓN</span></option>
-			                                			<option value="opt2"><span>INGENIERIA EN TECNOLOGIAS DE MANUFACTURA</span></option>
+											<div class="col-lg-10">
+												<label>Empresa</label>
+												<input type="text" value="Geek Celulares" class="form-control">
+											</div>
+										</div>
+									</div>
+									<div class="form-group">
+										<div class="row">
+											<div class="col-lg-10">
+												<label>Años trabajando</label>
+			                            			<select class="form-control">
+			                                			<option value="opt1"><span>Menos de 1 año</span></option>
+			                                			<option value="opt2"><span>1 año</span></option>
+			                                			<option value="opt3"><span>2 años</span></option>
+			                                			<option value="opt3"><span>3 años</span></option>
+			                                			<option value="opt3"><span>4 o más años</span></option>
 			                            			</select>
 											</div>
 										</div>
 									</div>
-							</div>
-
+									<div class="form-group">
+										<div class="row">
+											<div class="col-lg-10">
+												<label>Periodo Vacacional</label>
+												<input class="form-control col-lg-10 daterange-basic" type="text" value="10/19/2019 - 10/30/2019">
+											</div>
+										</div>
+									</div>
+									<div class="form-group">
+										<div class="row">
+											<div class="col-lg-10">
+												<label>Motivo</label>
+												<input type="text" value="Muchos días de vacaciones acumulados" class="form-control">
+											</div>
+										</div>
+									</div>
 							<div class="modal-footer pt-3">
 								<button type="button" class="btn btn-link" data-dismiss="modal">Cerrar</button>
-								<button type="button" class="btn bg-violet" data-dismiss="modal">Guardar Cambios</button>
+								<button type="button" class="btn bg-brown" data-dismiss="modal">Guardar Cambios</button>
 							</div>
 						</div>
 					</div>
 				</div>
-				<!-- Fin Modal de Editar-->
-
-				<!--Modal Editar-->
-				<div id="EditarA3_modal" class="modal fade" tabindex="-1">
+				</div>
+				<!--Fin del Modal Editar-->
+				<!--Modal de Editar-->
+				<div id="Vac3_modal" class="modal fade" tabindex="-1">
 					<div class="modal-dialog modal-dialog-scrollable">
 						<div class="modal-content">
-							<div class="modal-header pb-3 bg-brown-700">
-								<h5 class="modal-title font-weight-bold">Editar Alumno</h5>
+							<div class="modal-header pb-3 bg-blue">
+								<h5 class="modal-title font-weight-bold">Editar Vacaciones</h5>
 								<button type="button" class="close" data-dismiss="modal">&times;</button>
 							</div>
 
@@ -447,50 +475,64 @@
 								<div class="form-group">
 										<div class="row">
 											<div class="col-lg-5">
-												<label>Matricula</label>
-												<input type="text" value="1890239" class="form-control">
-											</div>
-										</div>
-								</div>
-									<div class="form-group">
-										<div class="row">
-											<div class="col-lg-5">
-												<label>Nombre</label>
-												<input type="text" value="Juan Antonio Ivanov Perona" class="form-control">
+												<label>Empleado</label>
+												<input type="text" value="Aura Zafiro" class="form-control">
 											</div>
 										</div>
 									</div>
 									<div class="form-group">
 										<div class="row">
-											<div class="col-lg-5">
-												<label>Carrera</label>
-													<select class="form-control col-lg-10 border-indigo border-2">
-			                                			<option value="opt1"><span>INGENIERIA DE SISTEMAS AUTOMOTRICES</span></option>
-			                                			<option value="opt2"><span>INGENIERIA MECATRONICA</span></option>
-			                                			<option value="opt2"><span>PYMES</span></option>
-			                                			<option value="opt2"><span>INGENIERIA EN TECNOLOGIAS DE LA INFORMACIÓN</span></option>
-			                                			<option value="opt2"><span>INGENIERIA EN TECNOLOGIAS DE MANUFACTURA</span></option>
+											<div class="col-lg-10">
+												<label>Empresa</label>
+												<input type="text" value="Ciberseguridad Tech" class="form-control">
+											</div>
+										</div>
+									</div>
+									<div class="form-group">
+										<div class="row">
+											<div class="col-lg-10">
+												<label>Años trabajando</label>
+			                            			<select class="form-control">
+			                                			<option value="opt1"><span>Menos de 1 año</span></option>
+			                                			<option value="opt2"><span>1 año</span></option>
+			                                			<option value="opt3"><span>2 años</span></option>
+			                                			<option value="opt3"><span>3 años</span></option>
+			                                			<option value="opt3"><span>4 o más años</span></option>
 			                            			</select>
 											</div>
 										</div>
 									</div>
-							</div>
-
+									<div class="form-group">
+										<div class="row">
+											<div class="col-lg-10">
+												<label>Periodo Vacacional</label>
+												<input class="form-control col-lg-10 daterange-basic" type="text" value="11/1/2019 - 11/8/2019">
+											</div>
+										</div>
+									</div>
+									<div class="form-group">
+										<div class="row">
+											<div class="col-lg-10">
+												<label>Motivo</label>
+												<input type="text" value="Cumpleaños de un familiar" class="form-control">
+											</div>
+										</div>
+									</div>
 							<div class="modal-footer pt-3">
 								<button type="button" class="btn btn-link" data-dismiss="modal">Cerrar</button>
-								<button type="button" class="btn bg-violet" data-dismiss="modal">Guardar Cambios</button>
+								<button type="button" class="btn bg-brown" data-dismiss="modal">Guardar Cambios</button>
 							</div>
 						</div>
 					</div>
 				</div>
-				<!-- Fin Modal de Editar-->
-
-				<!--Modal Editar-->
-				<div id="EditarA4_modal" class="modal fade" tabindex="-1">
+				</div>
+				<!--Fin del Modal Editar-->
+				<!--Modal de Editar-->
+				<div id="Vac4_modal" class="modal fade" tabindex="-1">
 					<div class="modal-dialog modal-dialog-scrollable">
 						<div class="modal-content">
-							<div class="modal-header pb-3 bg-brown-700">
-								<h5 class="modal-title font-weight-bold">Editar Alumno</h5>
+							<div class="modal-header pb-3 bg-blue">
+								<h5 class="modal-title font-weight-bold">Editar Vacaciones</h5>
 								<button type="button" class="close" data-dismiss="modal">&times;</button>
 							</div>
 
@@ -498,50 +540,64 @@
 								<div class="form-group">
 										<div class="row">
 											<div class="col-lg-5">
-												<label>Matricula</label>
-												<input type="text" value="1940392" class="form-control">
-											</div>
-										</div>
-								</div>
-									<div class="form-group">
-										<div class="row">
-											<div class="col-lg-5">
-												<label>Nombre</label>
-												<input type="text" value="Victor Pages Blanco<" class="form-control">
+												<label>Empleado</label>
+												<input type="text" value="DIO Brando" class="form-control">
 											</div>
 										</div>
 									</div>
 									<div class="form-group">
 										<div class="row">
-											<div class="col-lg-5">
-												<label>Carrera</label>
-													<select class="form-control col-lg-10 border-indigo border-2">
-														<option value="opt2"><span>INGENIERIA MECATRONICA</span></option>
-			                                			<option value="opt1"><span>INGENIERIA DE SISTEMAS AUTOMOTRICES</span></option>
-			                                			<option value="opt2"><span>PYMES</span></option>
-			                                			<option value="opt2"><span>INGENIERIA EN TECNOLOGIAS DE LA INFORMACIÓN</span></option>
-			                                			<option value="opt2"><span>INGENIERIA EN TECNOLOGIAS DE MANUFACTURA</span></option>
+											<div class="col-lg-10">
+												<label>Empresa</label>
+												<input type="text" value="Ventas Galaxia" class="form-control">
+											</div>
+										</div>
+									</div>
+									<div class="form-group">
+										<div class="row">
+											<div class="col-lg-10">
+												<label>Años trabajando</label>
+			                            			<select class="form-control">
+			                                			<option value="opt1"><span>Menos de 1 año</span></option>
+			                                			<option value="opt2"><span>1 año</span></option>
+			                                			<option value="opt3"><span>2 años</span></option>
+			                                			<option value="opt3"><span>3 años</span></option>
+			                                			<option value="opt3"><span>4 o más años</span></option>
 			                            			</select>
 											</div>
 										</div>
 									</div>
-							</div>
-
+									<div class="form-group">
+										<div class="row">
+											<div class="col-lg-10">
+												<label>Periodo Vacacional</label>
+												<input class="form-control col-lg-10 daterange-basic" type="text" value="10/15/2019 - 10/25/2019">
+											</div>
+										</div>
+									</div>
+									<div class="form-group">
+										<div class="row">
+											<div class="col-lg-10">
+												<label>Motivo</label>
+												<input type="text" value="Familiar enfermo en Egipto" class="form-control">
+											</div>
+										</div>
+									</div>
 							<div class="modal-footer pt-3">
 								<button type="button" class="btn btn-link" data-dismiss="modal">Cerrar</button>
-								<button type="button" class="btn bg-violet" data-dismiss="modal">Guardar Cambios</button>
+								<button type="button" class="btn bg-brown" data-dismiss="modal">Guardar Cambios</button>
 							</div>
 						</div>
 					</div>
 				</div>
-				<!-- Fin Modal de Editar-->
-
-				<!--Modal Editar-->
-				<div id="EditarA5_modal" class="modal fade" tabindex="-1">
+				</div>
+				<!--Fin del Modal Editar-->
+				<!--Modal de Editar-->
+				<div id="Vac5_modal" class="modal fade" tabindex="-1">
 					<div class="modal-dialog modal-dialog-scrollable">
 						<div class="modal-content">
-							<div class="modal-header pb-3 bg-brown-700">
-								<h5 class="modal-title font-weight-bold">Editar Alumno</h5>
+							<div class="modal-header pb-3 bg-blue">
+								<h5 class="modal-title font-weight-bold">Editar Vacaciones</h5>
 								<button type="button" class="close" data-dismiss="modal">&times;</button>
 							</div>
 
@@ -549,124 +605,60 @@
 								<div class="form-group">
 										<div class="row">
 											<div class="col-lg-5">
-												<label>Matricula</label>
-												<input type="text" value="504" class="form-control">
+												<label>Empleado</label>
+												<input type="text" value="Chrome Emblem" class="form-control">
 											</div>
 										</div>
-								</div>
+									</div>
 									<div class="form-group">
 										<div class="row">
-											<div class="col-lg-5">
-												<label>Nombre</label>
+											<div class="col-lg-10">
+												<label>Empresa</label>
 												<input type="text" value="Auto GreenStar" class="form-control">
 											</div>
 										</div>
 									</div>
 									<div class="form-group">
 										<div class="row">
-											<div class="col-lg-5">
-												<label>Carrera</label>
-													<select class="form-control col-lg-10 border-indigo border-2">
-			                                			<option value="opt1"><span>INGENIERIA DE SISTEMAS AUTOMOTRICES</span></option>
-			                                			<option value="opt2"><span>INGENIERIA MECATRONICA</span></option>
-			                                			<option value="opt2"><span>PYMES</span></option>
-			                                			<option value="opt2"><span>INGENIERIA EN TECNOLOGIAS DE LA INFORMACIÓN</span></option>
-			                                			<option value="opt2"><span>INGENIERIA EN TECNOLOGIAS DE MANUFACTURA</span></option>
+											<div class="col-lg-10">
+												<label>Años trabajando</label>
+			                            			<select class="form-control">
+			                                			<option value="opt1"><span>Menos de 1 año</span></option>
+			                                			<option value="opt2"><span>1 año</span></option>
+			                                			<option value="opt3"><span>2 años</span></option>
+			                                			<option value="opt3"><span>3 años</span></option>
+			                                			<option value="opt3"><span>4 o más años</span></option>
 			                            			</select>
-											</div>
-										</div>
-									</div>
-							</div>
-
-							<div class="modal-footer pt-3">
-								<button type="button" class="btn btn-link" data-dismiss="modal">Cerrar</button>
-								<button type="button" class="btn bg-violet" data-dismiss="modal">Guardar Cambios</button>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- Fin Modal de Editar-->
-
-				<!--Modal Editar-->
-				<div id="EditarA5_modal" class="modal fade" tabindex="-1">
-					<div class="modal-dialog modal-dialog-scrollable">
-						<div class="modal-content">
-							<div class="modal-header pb-3 bg-brown-700">
-								<h5 class="modal-title font-weight-bold">Editar Alumno</h5>
-								<button type="button" class="close" data-dismiss="modal">&times;</button>
-							</div>
-
-							<div class="modal-body">
-								<div class="form-group">
-										<div class="row">
-											<div class="col-lg-5">
-												<label>Matricula</label>
-												<input type="text" value="1849182" class="form-control">
-											</div>
-										</div>
-								</div>
-									<div class="form-group">
-										<div class="row">
-											<div class="col-lg-5">
-												<label>Nombre</label>
-												<input type="text" value="Auto GreenStar" class="form-control">
 											</div>
 										</div>
 									</div>
 									<div class="form-group">
 										<div class="row">
-											<div class="col-lg-5">
-												<label>Carrera</label>
-													<select class="form-control col-lg-10 border-indigo border-2">
-														<option value="opt2"><span>PYMES</span></option>
-			                                			<option value="opt1"><span>INGENIERIA DE SISTEMAS AUTOMOTRICES</span></option>
-			                                			<option value="opt2"><span>INGENIERIA MECATRONICA</span></option>
-			                                			<option value="opt2"><span>INGENIERIA EN TECNOLOGIAS DE LA INFORMACIÓN</span></option>
-			                                			<option value="opt2"><span>INGENIERIA EN TECNOLOGIAS DE MANUFACTURA</span></option>
-			                            			</select>
+											<div class="col-lg-10">
+												<label>Periodo Vacacional</label>
+												<input class="form-control col-lg-10 daterange-basic" type="text" value="12/20/2019 - 1/2/2020">
 											</div>
 										</div>
 									</div>
-							</div>
-
+									<div class="form-group">
+										<div class="row">
+											<div class="col-lg-10">
+												<label>Motivo</label>
+												<input type="text" value="Pasar la navidad con mi familia" class="form-control">
+											</div>
+										</div>
+									</div>
 							<div class="modal-footer pt-3">
 								<button type="button" class="btn btn-link" data-dismiss="modal">Cerrar</button>
-								<button type="button" class="btn bg-violet" data-dismiss="modal">Guardar Cambios</button>
+								<button type="button" class="btn bg-brown" data-dismiss="modal">Guardar Cambios</button>
 							</div>
 						</div>
 					</div>
 				</div>
-				<!-- Fin Modal de Editar-->
-
-
-
-			<!--Modal de Eliminar-->
-				<div id="Borrar_modal" class="modal fade" role="dialog">
-					<div class="modal-dialog">
-						<div class="modal-content">
-							<div class="modal-header">
-								<h5 class="modal-title">Confirmar Acción</h5>
-								<button type="button" class="close" data-dismiss="modal">&times;</button>
-							</div>
-								<div class="col-lg-5">
-									<label>Usuario</label>
-										<input type="text" placeholder="Nombre de Usuario" class="form-control">
-								</div>
-								<div class="col-lg-5">
-									<label>Contraseña</label>
-										<input type="password" placeholder="Contraseña" class="form-control">
-								</div>
-							<div class="modal-footer">
-								<button type="button" class="btn btn-violet" data-dismiss="modal" data-toggle="modal" data-target="#Conf_modal">Iniciar Sesión</button>
-								<button type="button" class="btn btn-light" data-dismiss="modal">Cancelar</button>
-							</div>
-						</div>
-					</div>
 				</div>
-			<!--Fin del Modal-->
-
-			<!--Modal de Confirmar-->
-				<div id="Conf_modal" class="modal fade" role="dialog">
+				<!--Fin del Modal Editar-->
+<!--Modal de Eliminar-->
+				<div id="remove_modal" class="modal fade" role="dialog">
 					<div class="modal-dialog">
 						<div class="modal-content">
 							<div class="modal-header">
@@ -678,13 +670,14 @@
 								¿Estás seguro de eliminar el Registro?
 							</div>
 							<div class="modal-footer">
-								<button type="button" class="btn btn-violet" data-dismiss="modal">Sí, borralo</button>
+								<button type="button" class="btn btn-primary" data-dismiss="modal">Sí, borralo</button>
 								<button type="button" class="btn btn-light" data-dismiss="modal">No borrar</button>
 							</div>
 						</div>
 					</div>
 				</div>
-			<!--Fin del Modal-->
+				<!--Fin del Modal-->
+
 			<!-- Footer -->
 			<div class="navbar navbar-expand-lg navbar-light">
 				<div class="text-center d-lg-none w-100">
