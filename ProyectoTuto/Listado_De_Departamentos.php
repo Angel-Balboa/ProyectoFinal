@@ -282,6 +282,7 @@
 		                	</div>
 	                	</div>
 					</div>
+					<div class="table-responsive">
 					<table class="table table-bordered">
 						<thead>
 							<tr class="bg-brown">
@@ -295,8 +296,8 @@
 						</thead>
 						<tbody>
 							<tr class="bg-teal-400">
-							<td><a href="#" class="list-icons-item" data-toggle="modal" data-target="#edit_modal"><i class="icon-pencil7"></i>
-					    	<a href="#" class="list-icons-item" data-popup="tooltip" title="Borrar" data-toggle="modal" data-target="#remove_modal"><i class="icon-trash"></i>	
+							<td><a href="#" class="list-icons-item" data-toggle="modal" data-target="#edit_modal"><i class="icon-pencil7"></i></a>
+					    	<a href="#" class="list-icons-item" data-popup="tooltip" title="Borrar" data-toggle="modal" data-target="#remove_modal"><i class="icon-trash"></i></a>
 					    	</td>
 								<td>1002</td>
 								<td>Finanzas</td>
@@ -306,7 +307,7 @@
 							</tr>
 							<tr class="table-success">
 								<td><a href="#" class="list-icons-item" data-toggle="modal" data-target="#Dep2_modal"><i class="icon-pencil7"></i></a>
-								<a href="#" class="list-icons-item" data-toggle="modal" data-target="#remove_modal"><i class="icon-trash"></i>
+								<a href="#" class="list-icons-item" data-toggle="modal" data-target="#remove_modal"><i class="icon-trash"></i></a>
 					    	    </td>
 								<td>1001</td>
 								<td>Juntas</td>
@@ -315,8 +316,8 @@
 								<td>8 Usuarios</td>
 							</tr>
 							<tr class="bg-teal-400">
-							<td><a href="#" class="list-icons-item" data-toggle="modal" data-target="#Dep3_modal"><i class="icon-pencil7"></i>
-					    	<a href="#" class="list-icons-item" data-toggle="modal" data-target="#remove_modal"><i class="icon-trash"></i>
+							<td><a href="#" class="list-icons-item" data-toggle="modal" data-target="#Dep3_modal"><i class="icon-pencil7"></i></a>
+					    	<a href="#" class="list-icons-item" data-toggle="modal" data-target="#remove_modal"><i class="icon-trash"></i></a>
 					    	</td>
 								<td>1003</td>
 								<td>Projectos</td>
@@ -325,8 +326,8 @@
 								<td>3 Usuarios</td>
 							</tr>
 							<tr class="table-success">
-							<td><a href="#" class="list-icons-item" data-toggle="modal" data-target="#Dep4_modal"><i class="icon-pencil7"></i>
-					    	<a href="#" class="list-icons-item" data-toggle="modal" data-target="#remove_modal"><i class="icon-trash"></i>
+							<td><a href="#" class="list-icons-item" data-toggle="modal" data-target="#Dep4_modal"><i class="icon-pencil7"></i></a>
+					    	<a href="#" class="list-icons-item" data-toggle="modal" data-target="#remove_modal"><i class="icon-trash"></i></a>
 					    	</td>
 								<td>1000</td>
 								<td>Recepción</td>
@@ -335,8 +336,8 @@
 								<td>2 Usuarios</td>
 							</tr>
 							<tr class="bg-teal-400">
-							<td><a href="#" class="list-icons-item" data-toggle="modal" data-target="#Dep5_modal"><i class="icon-pencil7"></i>
-					    	<a href="#" class="list-icons-item" data-toggle="modal" data-target="#remove_modal"><i class="icon-trash"></i>
+							<td><a href="#" class="list-icons-item" data-toggle="modal" data-target="#Dep5_modal"><i class="icon-pencil7"></i></a>
+					    	<a href="#" class="list-icons-item" data-toggle="modal" data-target="#remove_modal"><i class="icon-trash"></i></a>
 					    	</td>
 								<td>1005</td>
 								<td>Mantenimiento</td>
@@ -347,6 +348,7 @@
 					</tbody>
 				</table>
 			</div>
+		</div>
 							<div class="text-center">
 								<button type="submit" data-toggle="modal" data-target="#add_modal" class="btn bg-grey">Añadir Departamento <i class="icon-plus2 ml-2"></i></button>
 							</div>	

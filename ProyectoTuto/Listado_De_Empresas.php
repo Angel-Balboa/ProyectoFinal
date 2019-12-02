@@ -265,6 +265,7 @@
 		                	</div>
 	                	</div>
 					</div>
+					<div class="table-responsive">
 					<table class="table table-bordered">
 						<thead>
 							<tr class="bg-indigo">
@@ -357,6 +358,7 @@
 				</tbody>
 			</table>
 		</div>
+	</div>
 							<div class="text-center">
 								<button type="submit" class="btn bg-grey">Añadir Departamento <i class="icon-plus2 ml-2"></i><a href="#"area></a></button>
 							</div>	

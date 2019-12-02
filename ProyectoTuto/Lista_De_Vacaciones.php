@@ -270,6 +270,7 @@
 		                	</div>
 	                	</div>
 					</div>
+					<div class="table-responsive">
 					<table class="table table-bordered">
 						<thead>
 							<tr class="bg-slate">
@@ -329,6 +330,7 @@
 							</tr>
 						</tbody>
 					</table>
+				</div>
 				</div>
 			</div>
 			<!-- /content area -->

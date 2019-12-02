@@ -283,6 +283,7 @@
 		                	</div>
 	                	</div>
 					</div>
+					<div class="table-responsive">
 					<table class="table table-bordered">
 						<thead>
 							<tr class="bg-green-400">
@@ -411,6 +412,7 @@
 						</tbody>
 					</table>
 			</div>
+		</div>
 			<!-- /content area -->
 
 <!--Modal de Eliminar-->

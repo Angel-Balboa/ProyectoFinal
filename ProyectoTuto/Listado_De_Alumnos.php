@@ -283,6 +283,7 @@ x	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		                	</div>
 	                	</div>
 					</div>
+					<div class="table-responsive">
 					<table class="table table-bordered">
 						<thead>
 							<tr class="bg-green-400">
@@ -329,6 +330,7 @@ x	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 							</tr>
 						</tbody>
 					</table>
+				</div>
 			</div>
 			<!-- /content area -->
 
